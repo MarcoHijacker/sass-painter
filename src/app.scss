@@ -1,0 +1,25 @@
+// Template SASS / Painter - SCSS
+
+@import "partials/_variables.scss";
+@import "partials/_common.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import "partials/_header.scss";
+@import "partials/_content.scss";
+@import "partials/_footer.scss";
+
+body {
+  font-family: 'Exo 2', sans-serif;
+  background-color: $default_bg;
+  color: $default_clr;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
