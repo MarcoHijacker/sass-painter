@@ -4,17 +4,104 @@
   box-sizing: border-box;
 }
 
+header {
+  width: 100%;
+  height: 100px;
+  background-color: #1e1e1e;
+}
+
+header .superior {
+  width: 100%;
+  height: 25px;
+}
+
+header .superior nav {
+  float: right;
+}
+
+header .superior nav ul {
+  list-style: none;
+}
+
+header .superior nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+  font-size: 14px;
+}
+
+header .superior nav ul li a {
+  color: lightgrey;
+  text-decoration: none;
+}
+
+header .superior nav ul li a i {
+  margin-right: 5px;
+  color: #009cff;
+}
+
+header .main {
+  width: 100%;
+  height: 75px;
+}
+
+header .main nav {
+  float: left;
+}
+
+header .main nav ul {
+  list-style: none;
+}
+
+header .main nav ul li {
+  display: inline-block;
+  padding: 15px 20px;
+}
+
+header .main nav ul li:first-child {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+header .main nav ul li:hover {
+  background-color: #e1e1e1;
+}
+
+header .main nav ul li:hover a {
+  color: black;
+}
+
+header .main nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+header .main nav ul li a i {
+  font-size: 10px;
+  margin-right: 5px;
+  color: grey;
+}
+
+header .jumbotron {
+  padding: 0;
+  width: 100%;
+  height: 460px;
+  background-image: url(https://www.painterartist.com/static/ptr/product_content/painteressentials/7/hero-painteressentials-7.jpg);
+  background-size: cover;
+}
+
 main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
+  background-color: #cecece;
 }
 
 body {
   font-family: "Exo 2", sans-serif;
-  background-color: darkcyan;
+  background-color: #1e1e1e;
   color: white;
+}
+
+.container {
+  padding: 10px 250px;
 }
 

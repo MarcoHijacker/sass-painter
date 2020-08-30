@@ -1,1 +1,73 @@
 // Template SASS / Painter - Header
+
+header {
+  width: 100%;
+  height: 100px;
+  background-color: $default_bg;
+
+  .superior {
+    width: 100%;
+    height: 25px;
+    nav {
+      float: right;
+      ul {
+        list-style: none;
+        li {
+          display: inline-block;
+          margin: 0 15px;
+          font-size: 14px;
+          a {
+            color: lightgrey;
+            text-decoration: none;
+            i {
+              margin-right: 5px;
+              color: #009cff;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .main {
+    width: 100%;
+    height: 75px;
+    nav {
+      float: left;
+      ul {
+        list-style: none;
+        li {
+          &:first-child {
+          font-size: 32px;
+          font-weight: bold;
+          }
+          &:hover {
+            background-color: #e1e1e1;
+            a {
+              color: black;
+            }
+          }
+          display: inline-block;
+          padding: 15px 20px;
+          a {
+            color: white;
+            text-decoration: none;
+            i {
+              font-size: 10px;
+              margin-right: 5px;
+              color: grey;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .jumbotron {
+    padding: 0;
+    width: 100%;
+    height: 460px;
+    background-image: url(https://www.painterartist.com/static/ptr/product_content/painteressentials/7/hero-painteressentials-7.jpg);
+    background-size: cover;
+  }
+}
