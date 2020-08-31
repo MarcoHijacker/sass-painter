@@ -66,7 +66,7 @@ header {
     width: 35%;
     height: 100%;
     color: white;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: flex-end;
     padding: 20px;
     font-size: 12px;
@@ -109,8 +109,69 @@ header {
     }
   }
   .jumbo-right {
+    padding: 20px;
     width: 30%;
     height: 100%;
-    background-color: cyan;
+    background-color: black;
+    color: white;
+    .price {
+      display: inline-block;
+      width: 49%;
+      .discount {
+        background-color: darkviolet;
+        padding: 10px;
+        width: 95px;
+        margin: 10px 0;
+      }
+      .finalprice {
+        font-size: 24px;
+        font-weight: 600;
+      }
+      .oldprice {
+        color: lightgrey;
+      }
+      .dnload {
+        color: lightgrey;
+      }
+    }
+    .warranty {
+      display: inline-block;
+      width: 49%;
+      text-align: right;
+    }
+    .buynow {
+      padding: 10px 20px;
+      margin: 30px 0;
+      background-color: darkcyan;
+      width: 120px;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      &:hover {
+        background-color: #025353;
+      }
+    }
+    .appreciation {
+      padding: 20px;
+      background-color: #cecece;
+      color: black;
+      .appreciation-title {
+        font-weight: 600;
+        margin: 5px 0;
+      }
+      .appreciation-body {
+        font-size: 16px;
+        margin: 5px 0;
+        .appreciation-discount {
+          color: darkviolet;
+          font-weight: 600;
+        }
+      }
+      .appreciation-footer {
+        color: #009cff;
+        margin: 5px 0;
+        cursor: pointer;
+      }
+    }
   }
 }

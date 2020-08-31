@@ -92,7 +92,7 @@ header .jumbo-left {
   width: 35%;
   height: 100%;
   color: white;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: flex-end;
   padding: 20px;
   font-size: 12px;
@@ -155,9 +155,83 @@ header .jumbo-center .download-logo {
 }
 
 header .jumbo-right {
+  padding: 20px;
   width: 30%;
   height: 100%;
-  background-color: cyan;
+  background-color: black;
+  color: white;
+}
+
+header .jumbo-right .price {
+  display: inline-block;
+  width: 49%;
+}
+
+header .jumbo-right .price .discount {
+  background-color: darkviolet;
+  padding: 10px;
+  width: 95px;
+  margin: 10px 0;
+}
+
+header .jumbo-right .price .finalprice {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+header .jumbo-right .price .oldprice {
+  color: lightgrey;
+}
+
+header .jumbo-right .price .dnload {
+  color: lightgrey;
+}
+
+header .jumbo-right .warranty {
+  display: inline-block;
+  width: 49%;
+  text-align: right;
+}
+
+header .jumbo-right .buynow {
+  padding: 10px 20px;
+  margin: 30px 0;
+  background-color: darkcyan;
+  width: 120px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+header .jumbo-right .buynow:hover {
+  background-color: #025353;
+}
+
+header .jumbo-right .appreciation {
+  padding: 20px;
+  background-color: #cecece;
+  color: black;
+}
+
+header .jumbo-right .appreciation .appreciation-title {
+  font-weight: 600;
+  margin: 5px 0;
+}
+
+header .jumbo-right .appreciation .appreciation-body {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+header .jumbo-right .appreciation .appreciation-body .appreciation-discount {
+  color: darkviolet;
+  font-weight: 600;
+}
+
+header .jumbo-right .appreciation .appreciation-footer {
+  color: #009cff;
+  margin: 5px 0;
+  cursor: pointer;
 }
 
 main {
