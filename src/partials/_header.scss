@@ -49,15 +49,7 @@ header {
           }
           display: inline-block;
           padding: 15px 20px;
-          a {
-            color: white;
-            text-decoration: none;
-            i {
-              font-size: 10px;
-              margin-right: 5px;
-              color: grey;
-            }
-          }
+          @include ul-template;
         }
       }
     }
@@ -68,5 +60,57 @@ header {
     height: 460px;
     background-image: url(https://www.painterartist.com/static/ptr/product_content/painteressentials/7/hero-painteressentials-7.jpg);
     background-size: cover;
+  }
+
+  .jumbo-left {
+    width: 35%;
+    height: 100%;
+    color: white;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 20px;
+    font-size: 12px;
+  }
+  .jumbo-center {
+    width: 34%;
+    height: 100%;
+    padding: 20px;
+    @include ul-template;
+    ul {
+      list-style: none;
+    }
+    h2, h3 {
+      margin: 20px;
+    }
+    ul li {
+      margin: 10px;
+    }
+    text-shadow: 1px 1px 1px grey;
+    .download-btn {
+      background-color: grey;
+      align-items: center;
+      padding: 10px 15px;
+      width: 210px;
+      justify-content: space-around;
+      cursor: pointer;
+      margin: 25px;
+    }
+    .download-txt {
+      border-right: solid 1px white;
+      padding-right: 10px;
+      .download-hl {
+        font-weight: 600;
+      }
+    }
+    .download-logo {
+      color: white;
+      font-size: 28px;
+      padding-left: 10px;
+    }
+  }
+  .jumbo-right {
+    width: 30%;
+    height: 100%;
+    background-color: cyan;
   }
 }

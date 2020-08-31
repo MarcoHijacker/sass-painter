@@ -1,5 +1,13 @@
 // Template SASS / Painter - SCSS
 
+// SCHEMA CONCETTUALE ADOTTATO:
+// common.scss - Cicli o Mix;
+// variables.scss - Set di variabili;
+// content.scss - Istruzioni relative al main;
+// app.scss - Istruzioni globali o relative al body (e i vari @import);
+// header.scss - Istruzioni relative all'header;
+// footer.scss - Istruzioni relative al footer.
+
 @import "partials/_variables.scss";
 @import "partials/_common.scss";
 
@@ -20,4 +28,8 @@ body {
 }
 .container {
   padding: 10px 250px;
+  height: 100%;
+}
+.flex-it {
+  display: flex;
 }

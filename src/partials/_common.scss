@@ -1,1 +1,13 @@
 // Template SASS / Painter - Common
+
+@mixin ul-template {
+  a {
+    color: white;
+    text-decoration: none;
+    i {
+      font-size: 10px;
+      margin-right: 5px;
+      color: grey;
+    }
+  }
+}
